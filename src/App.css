@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url('./Фон.svg');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.App img{
+  margin-top: -10vw;
+  margin-left: 5vw;
+  height: 3vw;
+}
+
+.App .form{
+  margin-top: 11.6vw;
+  width: 31vw;
+  border-radius: 5vw;
+  background: #FFFFFF;
+  display: grid;
+  gap: 3vw;
+  justify-content: center;
+}
+
+.App h1{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.App input{
+  border: None;
+  outline: None;
+  border-bottom: 0.2vw solid #7b7878;
+  width: 20.9vw;
+  font-size: 2vw;
+}
+
+.App button{
+  border: None;
+  outline: None;
+  border-radius: 1.7vw;
   color: white;
+  width: 15vw;
+  height: 5vw;
+  background: #1E4391;
+  color: black;
+  font-size: 2vw;
+  margin-left: 2.9vw;
+  margin-top: 2vw;
+  margin-bottom: 5.8vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .warning{
+  font-size: 2vw;
+  color: #C0231F;
+  margin-bottom: -2vw;
 }
