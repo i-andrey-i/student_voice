@@ -8,7 +8,7 @@ function App() {
   const [password, setPassword] = useState('') 
 
   // Состояние на правильную запись email
-  const [emailError, setEmailError] = useState('Поле email не может быть пустым')
+  const [emailError, setEmailError] = useState('')
 
   // Состояние на проверку были ли в input поле или нет
   const [emailDirty, setEmailDirty] = useState(false)
@@ -42,8 +42,8 @@ function App() {
 
   return (
 		<div className='App'>
+			<img src={logo} alt='' />
 			<form className='form'>
-				<img src={logo} alt='' />
 				<h1>Авторизация</h1>
 
 				{emailError && emailDirty && (
