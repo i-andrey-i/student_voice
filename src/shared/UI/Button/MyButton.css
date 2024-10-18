@@ -1,0 +1,22 @@
+.MyButton button{
+  border: None;
+  outline: None;
+  margin-top: 8.8vh;
+  margin-bottom: 10vh;
+  border-radius: 2vw;
+  background: #1E4391;
+  height: 5vw;
+  width: 10vw;
+  color: #FFFFFF;
+  font-size: 2vw;
+  margin-left: 7vw;
+  margin-right: 3vh;
+}
+
+@media (max-width: 500px) {
+    .MyButton button{
+      height: 3vh;
+      margin-top: 5vh;
+      margin-bottom: 6vh;
+    }
+}
