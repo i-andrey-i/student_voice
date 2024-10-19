@@ -6,10 +6,10 @@ function MyInput(props) {
       <input 
         value={props.value} 
         onChange={props.onChange} 
-        onBlur={props.onBlur} 
         name={props.name} 
         type={props.type} 
-        placeholder={props.placeholder}/>
+        placeholder={props.placeholder}
+      />
     </div>
   );
 }

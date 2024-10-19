@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url('../../shared/images/Фон.png');
+  background-image: url('../../shared/images/BackgroundAuth.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -33,6 +33,7 @@ body{
 }
 
 .App h1{
+  font-family: 'Mont', sans-serif;
   text-align: center;
   margin-top: 8vh;
   font-size: 3vw;

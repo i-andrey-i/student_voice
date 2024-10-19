@@ -1,6 +1,6 @@
 .MyButton button{
-  border: None;
-  outline: None;
+  border: none;
+  outline: none;
   margin-top: 8.8vh;
   margin-bottom: 10vh;
   border-radius: 2vw;
@@ -11,6 +11,7 @@
   font-size: 2vw;
   margin-left: 7vw;
   margin-right: 3vh;
+  font-family: 'Mont', sans-serif;
 }
 
 @media (max-width: 500px) {
