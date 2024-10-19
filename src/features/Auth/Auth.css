@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url('../../shared/images/BackgroundAuth.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+
+.App{
+  display: grid;
+  justify-content: center;
+}
+
+.App img{
+  margin: auto;
+  margin-top: 3vh;
+  width: 8.8vw;
+}
+
+.App .form{
+  margin-top: 12vh;
+  background: #FFFFFF;
+  display: grid;
+  justify-content: center;
+  width: 31vw;
+  border-radius: 4vw;
+}
+
+.App h1{
+  font-family: 'Mont', sans-serif;
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 3vw;
+}
+
+/*
+.App .warning{
+  font-size: 2vw;
+  color: #C0231F;
+  margin-bottom: -2vw;
+}*/
+
+@media (max-width: 500px) {
+    .App .form {
+      margin-top: 20vh;
+      width: 40vw;
+    }
+
+    .App h1{
+      margin-top: 6vh;
+    }
+}

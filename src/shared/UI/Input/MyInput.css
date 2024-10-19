@@ -1,0 +1,14 @@
+.MyInput input{
+  border: none;
+  outline: none;
+  border-bottom: 0.1vh solid #7b7878;
+  font-size: 2vw;
+  margin-top: 8.8vh;
+}
+
+
+@media (max-width: 500px) {
+    .MyInput input{
+      margin-top: 5vh;
+    }
+}
