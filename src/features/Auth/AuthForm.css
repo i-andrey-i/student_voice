@@ -1,0 +1,33 @@
+.App{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 0;
+}
+
+.App .form{
+  background: #FFFFFF;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 49.6rem;
+  border-radius: 4.3rem;
+}
+
+.App b{
+  font-family: 'Mont', sans-serif;
+  text-align: center;
+  margin-top: 9.35rem;
+  font-size: 4rem;
+}
+
+@media(max-width: 600px) {
+  .App .form {
+    width: 24.2rem;
+  }
+
+  .App b{
+    margin-top: 4.65rem;
+    font-size: 1.8rem;
+  }
+}

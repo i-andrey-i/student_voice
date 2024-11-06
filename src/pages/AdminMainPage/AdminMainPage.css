@@ -1,0 +1,21 @@
+.MainClass{
+   background: rgb(245, 243, 243);
+   height: 100vh;
+}
+
+.MainClass .Greeting{
+    margin-top: 3.2rem;
+    color: #0F2B5E;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    height: 4.8rem;
+    text-align: center;
+}
+
+
+@media(max-width: 600px) {
+    .MainClass .Greeting{
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+.AuthPage .info{
+    display: flex;
+    gap: 20rem;
+}
+
+.AuthPage .title{
+    font-size: 9.6rem;
+    font-family: 'Mont', sans-serif;
+    margin-top: 50.6rem;
+    margin-left: 4rem;
+    width: 50rem;
+    height: 16.8rem;
+    color: white;
+}
+
+.AuthPage .blockText{
+    grid-area: blockText;
+    margin-top: 44.6rem;
+    width: 49.1rem;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+}
+
+.AuthPage .butt{
+    margin-top: 3.3rem;
+    border-radius: 2rem;
+    color: black;
+    background: white;
+    font-size: 2.4rem;
+    width: 23.7rem;
+    height: 8rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+@media(max-width: 600px) {
+    .AuthPage .info{
+        display: grid;
+        grid-template-areas: 
+            "blockText"
+            "title";
+    }   
+    .AuthPage .title{
+        font-size: 4rem;
+        margin-left: 2rem;
+        width: 17.7rem;
+        margin-top: 20.4rem;
+    }
+
+    .AuthPage .blockText{
+        margin-top: 10.1rem;
+        margin-left: 2rem;
+        width: 22.7rem;
+        height: 11.8rem;
+        font-size: 1.4rem;
+    }
+
+    .AuthPage .butt{
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        width: 12rem;
+        height: 4rem;
+    }
+}
