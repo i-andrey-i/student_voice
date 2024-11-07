@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { authUser, getMe } from './AuthApi/AuthApi'
-import './AuthForm.css'
+import styles from './AuthForm.module.css'
 import MyButton from '../../shared/UI/Button/MyButton'
 import MyInput from '../../shared/UI/Input/MyInput'
 import { useNavigate } from 'react-router-dom'
@@ -20,7 +20,7 @@ function AuthForm() {
 			console.log('Поехали!')
 
 			authUser(formInfo).then(data=>{
-				console.log('POST запрос отрпботал', data.access_token)
+				console.log('POST запрос отработал', data.access_token)
 				if (data.access_token) {
 					localStorage.setItem('accessToken', data.accessToken)
 
@@ -43,9 +43,9 @@ function AuthForm() {
 	}
 
 	return (
-		<div className='App'>
+		<div className={styles.app}>
 			<form
-				className='form'
+				className={styles.form}
 				onSubmit={e => {
 					e.preventDefault()
 					onSubmit({username, password })

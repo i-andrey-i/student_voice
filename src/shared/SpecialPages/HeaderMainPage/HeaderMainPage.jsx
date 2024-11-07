@@ -1,7 +1,7 @@
-import './HeaderMainPage.css'
-import logo from '../../images/logo_urfu (1).png'
-import but from '../../images/Round_Open.png'
-import close from '../../images/Close.png'
+import styles from './HeaderMainPage.module.css'
+import logo from '../../images/logo_urfu (1).svg'
+import but from '../../images/Round_Open.svg'
+import close from '../../images/Close.svg'
 import { useState } from 'react'
 
 function HeaderMainPage() {
@@ -11,13 +11,13 @@ function HeaderMainPage() {
     }
 
     return (
-			<div className='Class'>
-				<button className='roundButton' onClick={HandleClick}>
-					<img src={menuOpen ? close : but} alt='Меню' className='but' />
+			<div className={styles.Class}>
+				<button className={styles.roundButton} onClick={HandleClick}>
+					<img src={menuOpen ? close : but} alt='Меню' />
 				</button>
-				<img src={logo} alt='Логотип УрФУ' className='logo' />
+				<img src={logo} alt='Логотип УрФУ' className={styles.logo} />
 
-				<div className={`side-nav ${menuOpen ? 'open' : ''}`}>
+				<div className={`${styles.sideNav} ${menuOpen ? styles.open : ''}`}>
 					<ul>
 						<li><a href='#'>Рейтинги</a></li>
 						<li><a href='#'>Пользователи</a></li>

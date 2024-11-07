@@ -1,28 +1,32 @@
-.AuthPage .info{
+.info{
+    margin-top: auto;
+    margin-bottom: 6rem;
     display: flex;
-    gap: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
 }
 
-.AuthPage .title{
+.title{
     font-size: 9.6rem;
-    font-family: 'Mont', sans-serif;
-    margin-top: 50.6rem;
-    margin-left: 4rem;
-    width: 50rem;
+    width: 58.5rem;
     height: 16.8rem;
+    font-family: 'Mont', sans-serif;
     color: white;
+    font-weight: 600;
+    margin-left: 4rem;
 }
 
-.AuthPage .blockText{
+.blockText{
     grid-area: blockText;
-    margin-top: 44.6rem;
-    width: 49.1rem;
     font-size: 2.4rem;
+    width: 49.1rem;
     font-family: 'Montserrat', sans-serif; 
     color: white;
+    font-weight: 600;
 }
 
-.AuthPage .butt{
+.butt{
     margin-top: 3.3rem;
     border-radius: 2rem;
     color: black;
@@ -33,31 +37,35 @@
     border: none;
     outline: none;
     font-weight: bold;
-}
+    font-weight: 600;
+} 
 
-@media(max-width: 600px) {
-    .AuthPage .info{
+@media(max-width: 750px) {
+
+    .info{
         display: grid;
+        margin-top: 1rem;
         grid-template-areas: 
             "blockText"
             "title";
+        height: auto;
     }   
-    .AuthPage .title{
+    .title{
         font-size: 4rem;
         margin-left: 2rem;
-        width: 17.7rem;
-        margin-top: 20.4rem;
+        max-width: 17.7rem;
+        align-self: end;
+        margin-bottom: -5rem;
     }
 
-    .AuthPage .blockText{
-        margin-top: 10.1rem;
+    .blockText{
         margin-left: 2rem;
-        width: 22.7rem;
-        height: 11.8rem;
+        max-width: 22.7rem;
+        max-height: 11.8rem;
         font-size: 1.4rem;
     }
 
-    .AuthPage .butt{
+    .butt{
         margin-top: 1.5rem;
         border-radius: 1rem;
         font-size: 1.4rem;

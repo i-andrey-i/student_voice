@@ -1,11 +1,11 @@
 import HeaderMainPage from "../../shared/SpecialPages/HeaderMainPage/HeaderMainPage";
-import './AdminMainPage.css'
+import styles from './AdminMainPage.module.css'
 
 function AdminMainPage() {
   return (
-		<div className='MainClass'>
+		<div className={styles.MainClass}>
 			<HeaderMainPage />
-			<p className='Greeting'>Добро пожаловать, админ!</p>
+			<p className={styles.Greeting}>Добро пожаловать, админ!</p>
 		</div>
 	)
 }

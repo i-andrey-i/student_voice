@@ -1,11 +1,12 @@
-.App{
+.app{
   display: flex; 
   justify-content: center; 
   align-items: center; 
   z-index: 0;
+  height: 100vh;
 }
 
-.App .form{
+.form{
   background: #FFFFFF;
   display: grid;
   justify-content: center;
@@ -14,19 +15,19 @@
   border-radius: 4.3rem;
 }
 
-.App b{
+.app b{
   font-family: 'Mont', sans-serif;
   text-align: center;
   margin-top: 9.35rem;
   font-size: 4rem;
 }
 
-@media(max-width: 600px) {
-  .App .form {
+@media(max-width: 750px) {
+  .form {
     width: 24.2rem;
   }
 
-  .App b{
+  .app b{
     margin-top: 4.65rem;
     font-size: 1.8rem;
   }

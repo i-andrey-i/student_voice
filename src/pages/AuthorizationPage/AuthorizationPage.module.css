@@ -10,11 +10,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  height: 100vh;
-  display: grid;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.AuthPage .logo{
+.logo{
   position: absolute;
   width: 10rem;
   z-index: 1;
@@ -23,12 +24,13 @@
   transform: translateX(-50%);
 }
 
-@media(max-width: 600px) {
+@media(max-width: 750px) {
   .AuthPage{
+    display: grid;
     background-image: url('../../shared/images/Mob_Back_Auth.png');
   }
   
-  .AuthPage .logo{
+  .logo{
     width: 10.4rem;
     left: 7rem;
   } 

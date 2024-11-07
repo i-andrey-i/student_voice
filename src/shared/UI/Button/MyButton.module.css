@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.MyButton button{
+button{
   border: none;
   outline: none;
   margin-top: 8rem;
@@ -15,8 +15,8 @@
   font-family: 'Mont', sans-serif;
 }
 
-@media (max-width: 600px) {
-    .MyButton button{
+@media (max-width: 750px) {
+    button{
       width: 12rem;
       height: 4rem;
       margin-top: 4rem;

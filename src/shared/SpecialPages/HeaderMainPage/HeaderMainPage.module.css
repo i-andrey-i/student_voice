@@ -7,26 +7,23 @@
     position: relative;
 }
 
-.Class .logo{
+.logo{
     width: 14rem;
     height: 4.8rem;
     position: absolute;
 }
 
-.Class .roundButton{
+.roundButton{
   background-color: transparent;
   border: none;
+  margin-right: auto; 
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-left: 4rem;
   margin-right: auto;   
 }
 
-.Class .but{
-    width: 5.2rem;
-    height: 5.2rem;
-    margin-left: 4rem;
-    margin-right: auto;   
-}
-
-.side-nav {
+.sideNav {
     top: 0;
     position: absolute;
     width: 3rem;
@@ -34,11 +31,11 @@
     transition: left 1s ease;
 }
 
-.side-nav.open {
+.sideNav.open {
   left: 0;
 }
 
-.side-nav ul {
+.sideNav ul {
     background: white;
     display: flex;
     margin-left: 16.9rem;
@@ -48,11 +45,11 @@
     width: 70rem;
 }
 
-.side-nav li {
+.sideNav li {
   margin-top: 4.3rem;
 }
 
-.side-nav a {
+.sideNav a {
     color: black;
     text-decoration: none;
     font-size: 1.6rem;
@@ -67,13 +64,13 @@
     height: 7.6rem;
   }
 
-  .Class .logo{
+  .logo{
     position: relative;
     margin-left: auto;
     margin-right: 2.8rem;
   }
 
-  .Class .but{
+  .roundButton{
     margin-left: 2.1rem;
   }
 }

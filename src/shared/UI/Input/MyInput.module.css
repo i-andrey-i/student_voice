@@ -7,7 +7,7 @@
   width: 33.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .MyInput input{
       margin-top: 4rem;
       width: 18.4rem;

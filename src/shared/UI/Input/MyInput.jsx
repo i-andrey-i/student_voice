@@ -1,7 +1,7 @@
-import './MyInput.css'
+import styles from './MyInput.module.css'
 function MyInput(props) {
   return (
-    <div className='MyInput'>
+    <div className={styles.MyInput}>
       <input 
         value={props.value} 
         onChange={props.onChange} 

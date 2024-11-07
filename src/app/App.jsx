@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AuthorizationPage from '../pages/AuthorizationPage/AuthorizationPage'
-import './App.css'
+import './App.module.css'
 import AdminMainPage from '../pages/AdminMainPage/AdminMainPage'
 import { AuthorizationRoutes } from './Road'
 
