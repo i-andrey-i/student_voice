@@ -1,12 +1,12 @@
-import HeaderMainPage from "../../shared/SpecialPages/HeaderMainPage/HeaderMainPage";
-import styles from './AdminMainPage.module.css'
+import RatingAdmin from "../../features/Rating/RatingAdmin";
+import HeaderMainPage from "../../components/HeaderMainPage/HeaderMainPage";
 
 function AdminMainPage() {
   return (
-		<div className={styles.MainClass}>
+		<>
 			<HeaderMainPage />
-			<p className={styles.Greeting}>Добро пожаловать, админ!</p>
-		</div>
+			<RatingAdmin />
+		</>
 	)
 }
 

@@ -1,0 +1,25 @@
+.AllPage {
+    /* Ваши стили для AllPage */
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Header {
+    display: flex;
+    justify-content: flex-start; /* Сдвигаем содержимое влево */
+    align-items: center; 
+}
+
+
+.RatingTa {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+@media(max-width: 750px) {
+    
+}

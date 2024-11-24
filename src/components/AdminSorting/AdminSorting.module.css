@@ -1,0 +1,91 @@
+.SortingContainer {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.Sorting {
+    color: #1E4391;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.Icon{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 0.9rem;
+}
+
+.DropdownMenu {
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 100%;
+    background: white;
+    width: 28.6rem;
+    padding: 2.37rem 3.45rem 3.37rem 3.45rem;
+}
+
+.DropdownItem {
+    display: block;
+    margin-top: 1rem;
+}
+
+.DropdownItem {
+    display: flex;
+    align-items: center;
+}
+
+.Circle {
+    width: 1rem; 
+    height: 1rem; 
+    border-radius: 50%; 
+    background: transparent; 
+    border: 1px solid #ccc; 
+    margin-right: 1.5rem; 
+    position: relative;
+}
+
+.Circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.8rem; 
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #fff; 
+}
+
+.Circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.4rem; 
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #1E4391; 
+    display: none;
+}
+
+.Selected .Circle {
+    border-color: #1E4391;
+}
+
+.Selected .Circle::after {
+    display: block; 
+}
+
+
+
+
+@media(max-width: 750px) {
+    
+}

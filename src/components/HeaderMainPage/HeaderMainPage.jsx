@@ -1,8 +1,9 @@
 import styles from './HeaderMainPage.module.css'
-import logo from '../../images/logo_urfu (1).svg'
-import but from '../../images/Round_Open.svg'
-import close from '../../images/Close.svg'
+import logo from '../../shared/images/logo_urfu_main.svg'
+import but from '../../shared/images/Round_Open.svg'
+import close from '../../shared/images/Close.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function HeaderMainPage() {
     const[menuOpen, setMenuOpen] = useState(false)
@@ -19,7 +20,7 @@ function HeaderMainPage() {
 
 				<div className={`${styles.sideNav} ${menuOpen ? styles.open : ''}`}>
 					<ul>
-						<li><a href='#'>Рейтинги</a></li>
+						<li><Link to={`/mainAdminPage/rating`}>Рейтинги </Link></li>
 						<li><a href='#'>Пользователи</a></li>
 						<li><a href='#'>Пары</a></li>
 					</ul>
