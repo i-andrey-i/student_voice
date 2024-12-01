@@ -1,0 +1,9 @@
+.Comp{
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+@media(max-width: 750px) {
+    
+}

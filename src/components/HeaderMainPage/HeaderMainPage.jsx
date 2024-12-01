@@ -21,8 +21,8 @@ function HeaderMainPage() {
 				<div className={`${styles.sideNav} ${menuOpen ? styles.open : ''}`}>
 					<ul>
 						<li><Link to={`/mainAdminPage/rating`}>Рейтинги </Link></li>
-						<li><a href='#'>Пользователи</a></li>
-						<li><a href='#'>Пары</a></li>
+						<li><Link to={`/mainAdminPage/users`}>Пользователи</Link></li>
+						<li><Link to={`/mainAdminPage/reviews`}>Пары</Link></li>
 					</ul>
 				</div>
 			</div>

@@ -1,16 +1,14 @@
 import styles from './RatingNav.module.css'
 
 function RatingNav(props) {
-  const list = ['Институты', 'Предметы', 'Преподаватели']
 	const handleClick = (index) => {
 		props.setActiveMenu(index) // Устанавливаем активный элемент при клике
 	}
 
-
 	return (
 		<div className={styles.Nav}>
 			<ul>
-				{list.map((item, index) => (
+				{props.list.map((item, index) => (
 					<li
 						key={index}
 						onClick={() => handleClick(index)}

@@ -3,7 +3,9 @@ import AuthorizationPage from '../pages/AuthorizationPage/AuthorizationPage'
 import './App.module.css'
 import AdminMainPage from '../pages/AdminMainPage/AdminMainPage'
 import { AuthorizationRoutes } from './Road'
-import RatingAdminPage from '../pages/RatingAdminPage/RatingAdminPage'
+import UsersPage from '../pages/UsersPage/UsersPage'
+import ReviewsPage from '../pages/ReviewsPage/ReviewsPage'
+import StatisticInstPage from '../pages/StatisticInstPage/StatisticInstPage'
 
 function App() {
 	
@@ -12,7 +14,9 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Navigate to='/login' replace />} />
 				<Route path='mainAdminPage/:id' element={<AdminMainPage />} />
-				<Route path='mainAdminPage/rating' element={<RatingAdminPage/>} />
+				<Route path='mainAdminPage/rating' element={<StatisticInstPage />} />
+				<Route path='mainAdminPage/users' element={<UsersPage/>} />
+				<Route path='mainAdminPage/reviews' element={<ReviewsPage/>} />
 
 				<Route element={<AuthorizationRoutes />}>
 					<Route path='login' element={<AuthorizationPage />} />

@@ -1,0 +1,116 @@
+.formContainer {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.Sorting {
+    color: #1E4391;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 0.9rem;
+}
+
+.DropdownMenu {
+    margin-top: 1.5rem; 
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background: white;
+    width: 28.6rem;
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: grid;
+    justify-items: center;
+    gap: 4rem;
+}
+
+
+.DropdownItem {
+    display: block;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Circle {
+    width: 1rem; 
+    height: 1rem; 
+    border-radius: 50%; 
+    background: transparent; 
+    border: 1px solid #ccc; 
+    margin-right: 1.5rem; 
+    position: relative;
+}
+
+.Circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.8rem; 
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #fff; 
+}
+
+.Circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.4rem; 
+    height: 0.4rem;
+    border-radius: 50%;
+    background: #1E4391; 
+    display: none;
+}
+
+.Selected .Circle {
+    border-color: #1E4391;
+}
+
+.Selected .Circle::after {
+    display: block; 
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+}
+
+.Modal {
+    position: relative; 
+    background: white;
+    border-radius: 0.2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ButT{
+    margin: 0;
+    background-color: #1E4391;
+    color: white;
+    height: 6rem;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+
+}

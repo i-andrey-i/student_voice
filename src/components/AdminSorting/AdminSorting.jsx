@@ -20,7 +20,7 @@ function AdminSorting(props) {
 	return (
 		<div className={styles.SortingContainer}>
 			<p onClick={toggleMenu} className={styles.Sorting}>
-				Сортировка
+				{props.listForSort[0]}
 				<img
 					src={isOpen ? minus : plus}
 					alt={isOpen ? 'Minus icon' : 'Plus icon'}
@@ -35,15 +35,17 @@ function AdminSorting(props) {
 							selectedSort === 'asc' ? styles.Selected : ''
 						}`}
 					>
-						<span className={styles.Circle}></span> По возрастанию
+						<span className={styles.Circle}></span> {props.listForSort[1]}
 					</li>
+
+					
 					<li
 						onClick={() => handleSort('desc')}
 						className={`${styles.DropdownItem} ${
 							selectedSort === 'desc' ? styles.Selected : ''
 						}`}
 					>
-						<span className={styles.Circle}></span> По убыванию
+						<span className={styles.Circle}></span> {props.listForSort[2]}
 					</li>
 				</ul>
 			)}
