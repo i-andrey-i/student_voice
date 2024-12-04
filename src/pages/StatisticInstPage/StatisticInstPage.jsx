@@ -5,6 +5,9 @@ import PageLayout from '../../shared/SpecialPages/PageLayout/PageLayout'
 import RatingTable from '../../features/RatingTable/RatingTable'
 import styles from './StatisticInstPage.module.css'
 import HeaderMainPage from '../../components/HeaderMainPage/HeaderMainPage'
+import book from '../../shared/images/book.svg'
+import people from '../../shared/images/people.svg'
+import pen from '../../shared/images/pen.svg'
 
 const StatisticInstPage = () => {
 	const [activeMenu, setActiveMenu] = useState(0)
@@ -23,13 +26,17 @@ const StatisticInstPage = () => {
 		['ФИО', 'Рейтинг преподавателя', 'Взаимодействия'],
 	]
 
-	const data1 = [
-		['1.1', '1.1', '1.1', '1.1', '1.1'],
-		['1.2', '1.2', '1.2', '1.2', '1.2'],
+	const InstData = [
+		['1.1', '1.1', '1.1', '1.1'],
+		['1.2', '1.2', '1.2', '1.2'],
 	]
 
-	const data2 = [['2.1', '2.1', '2.1', '2.1', '2.1']]
-	const data3 = [['3.1', '3.1', '3.1', '3.1', '3.1']]
+	const SubData = [['2.1', '2.1']]
+	const StudData = [['3.1', '3.1']]
+
+	const data1 = InstData.map(subArray => [...subArray, [<img src={book} alt='book'/>, <img src={people} alt='people'/>, <img src={pen} alt='pen' />]])
+	const data2 = SubData.map(subArray => [...subArray, [<img src={book} alt='book'/>, <img src={people} alt='people'/>]])
+	const data3 = StudData.map(subArray => [...subArray, <img src={pen} alt='pen' />])
 
 	const [dataSets, setDataSets] = useState([data1, data2, data3])
 

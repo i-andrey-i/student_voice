@@ -22,7 +22,7 @@ function HeaderMainPage() {
 					<ul>
 						<li><Link to={`/mainAdminPage/rating`}>Рейтинги </Link></li>
 						<li><Link to={`/mainAdminPage/users`}>Пользователи</Link></li>
-						<li><Link to={`/mainAdminPage/reviews`}>Пары</Link></li>
+						<li><Link to={`/mainAdminPage/reviews`}>Отзывы</Link></li>
 					</ul>
 				</div>
 			</div>

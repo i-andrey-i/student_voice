@@ -5,6 +5,7 @@ import PageLayout from '../../shared/SpecialPages/PageLayout/PageLayout'
 import RatingTable from '../../features/RatingTable/RatingTable'
 import HeaderMainPage from '../../components/HeaderMainPage/HeaderMainPage'
 import styles from './UsersPage.module.css'
+import pen from '../../shared/images/pen.svg'
 
 function UsersPage() {
 	const [activeMenu, setActiveMenu] = useState(0)
@@ -12,45 +13,48 @@ function UsersPage() {
 	const menu = ['Админ', 'Преподаватель']
 
     const titles = [
-			['ФИО', 'Роль', 'Институт', 'Взаимодействия'],
-			['ФИО', 'Роль', 'Институт', 'Взаимодействия'],
-		]
+		['ФИО', 'Роль', 'Институт', 'Взаимодействия'],
+		['ФИО', 'Роль', 'Институт', 'Взаимодействия'],
+	]
 
-		const data1 = [
-			['1.1', '1.1', '1.1', '1.1'],
-			['1.2', '1.2', '1.2', '1.2',],
-		]
+	const AdminData = [
+		['1.1', '1.1', '1.1'],
+		['1.2', '1.2', '1.2'],
+	]
 
-		const data2 = [['2.1', '2.1', '2.1', '2.1']]
+	const UserData = [['2.1', '2.1', '2.1']]
 
-		const [dataSets, setDataSets] = useState([data1, data2])
+	const data1 = AdminData.map(subArray => [...subArray, <img src={pen} alt='pen' />])
+	const data2 = UserData.map(subArray => [...subArray, <img src={pen} alt='pen' />])
 
-		const listForSort = ['Институты', 'По адресу', 'По статусу']
+	const [dataSets, setDataSets] = useState([data1, data2])
 
-        const [name, setName] = useState('')
-		const [fullName, setFullName] = useState('')
-		const [address, setAddress] = useState('')
+	const listForSort = ['Институты', 'По адресу', 'По статусу']
 
-        const listForAdd = [
-					// Добавление админа
-					{
-						title: 'Добавить администратора',
-						fields: [
-							{ label: 'ФИО администратора', state: name, setState: setName },
-							{ label: 'Роль', state: fullName, setState: setFullName },
-							{ label: 'Институт', state: address, setState: setAddress },
-						],
-					},
-					// Добавление преподавателя
-					{
-						title: 'Добавить преподавателя',
-						fields: [
-							{ label: 'ФИО преподавателя', state: name, setState: setName },
-							{ label: 'Роль', state: fullName, setState: setFullName },
-							{ label: 'Институт', state: address, setState: setAddress },
-						],
-					},
-				]
+	const [name, setName] = useState('')
+	const [fullName, setFullName] = useState('')
+	const [address, setAddress] = useState('')
+
+	const listForAdd = [
+		// Добавление админа
+		{
+			title: 'Добавить администратора',
+			fields: [
+				{ label: 'ФИО администратора', state: name, setState: setName },
+				{ label: 'Роль', state: fullName, setState: setFullName },
+				{ label: 'Институт', state: address, setState: setAddress },
+			],
+		},
+		// Добавление преподавателя
+		{
+			title: 'Добавить преподавателя',
+			fields: [
+				{ label: 'ФИО преподавателя', state: name, setState: setName },
+				{ label: 'Роль', state: fullName, setState: setFullName },
+				{ label: 'Институт', state: address, setState: setAddress },
+			],
+		},
+	]
 
 	return (
 		<div>

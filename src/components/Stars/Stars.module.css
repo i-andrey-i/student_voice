@@ -1,0 +1,27 @@
+.TextMain{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #222222;
+}
+
+.MarkBlock{
+    margin-top: 1.4rem;
+    color: black;
+}
+
+.rating {
+    display: flex;
+}
+
+.star {
+    font-size: 3rem; 
+    color: lightgray;
+}
+
+.filled {
+    color: gold;
+}
+
+@media(max-width: 750px) {
+    
+}

@@ -20,7 +20,7 @@ const AddNewSmth = ({
 	const handleSubmit = e => {
 		console.log('ttv')
 		e.preventDefault()
-		const newInstitute = [name, fullName, address, 0, 0]
+		const newInstitute = [name, fullName, address]
 		onAdd(newInstitute, current)
 		setName('')
 		setFullName('')
