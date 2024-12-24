@@ -14,5 +14,8 @@
 }
 
 @media(max-width: 750px) {
-    
+    .Comp {
+        margin-top: 2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
