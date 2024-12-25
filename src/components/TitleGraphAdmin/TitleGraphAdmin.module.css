@@ -28,5 +28,8 @@
 }
 
 @media(max-width: 750px) {
-    
+    .TitleGraph p,
+    .DataSt p{
+        font-size: 1.2rem;
+    }
 }

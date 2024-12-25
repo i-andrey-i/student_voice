@@ -30,21 +30,21 @@ function RatingAdmin() {
 		<PageLayout title='Добро пожаловать, Админ!'>
 			{
 				<div className={styles.Rating}>
-				<p className={styles.title}>Рейтинг институтов</p>
-				<div className={styles.cupcur}>
-					<img src={cup} alt='Средний балл' />
-					<p className={styles.round}> {averageValue.toFixed(1)}</p>
+					<p className={styles.title}>Рейтинг институтов</p>
+					<div className={styles.cupcur}>
+						<img src={cup} alt='Средний балл' />
+						<p className={styles.round}> {averageValue.toFixed(1)}</p>
+					</div>
+					<p className={styles.st}>Средняя оценка институтов по университету</p>
+					{items.map(item => (
+						<StatisticItem
+							key={item.id}
+							data={item}
+							index={item.id}
+							total={items.length}
+						/>
+					))}
 				</div>
-				<p className={styles.st}>Средняя оценка институтов по университету</p>
-				{items.map(item => (
-					<StatisticItem
-						key={item.id}
-						data={item}
-						index={item.id}
-						total={items.length}
-					/>
-				))}
-			</div>
 			}
 		</PageLayout>
 	)

@@ -9,7 +9,6 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 1.4rem;
     height: auto;
-   
 }
 
 .title{
@@ -54,6 +53,8 @@
         margin-left: 0;   
         margin-bottom: 18rem;     
         height: auto;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .title{

@@ -10,8 +10,17 @@ import people from '../../shared/images/people.svg'
 import pen from '../../shared/images/pen.svg'
 
 const StatisticInstPage = () => {
-	const [activeMenu, setActiveMenu] = useState(0)
+	const getImageSize = () => {
+		const width = window.innerWidth
 
+		if (width < 750) {
+			return { width: '3rem', height: '3rem' }
+		}
+	}
+	const ImgStyle = getImageSize()
+
+	const [activeMenu, setActiveMenu] = useState(0)
+	
 	const menu = ['Институты', 'Предметы', 'Преподаватели']
 
 	const titles = [
@@ -34,9 +43,9 @@ const StatisticInstPage = () => {
 	const SubData = [['2.1', '2.1']]
 	const StudData = [['3.1', '3.1']]
 
-	const data1 = InstData.map(subArray => [...subArray, [<img src={book} alt='book'/>, <img src={people} alt='people'/>, <img src={pen} alt='pen' />]])
-	const data2 = SubData.map(subArray => [...subArray, [<img src={book} alt='book'/>, <img src={people} alt='people'/>]])
-	const data3 = StudData.map(subArray => [...subArray, <img src={pen} alt='pen' />])
+	const data1 = InstData.map(subArray => [...subArray, [<img src={book} style={ImgStyle} alt='book'/>, <img src={people} style={ImgStyle} alt='people'/>, <img src={pen} style={ImgStyle} alt='pen' />]])
+	const data2 = SubData.map(subArray => [...subArray, [<img src={book} style={ImgStyle} alt='book'/>, <img src={people} style={ImgStyle} alt='people'/>]])
+	const data3 = StudData.map(subArray => [...subArray, <img src={pen} style={ImgStyle} alt='pen' />])
 
 	const [dataSets, setDataSets] = useState([data1, data2, data3])
 
@@ -45,6 +54,7 @@ const StatisticInstPage = () => {
 	const [name, setName] = useState('')
 	const [fullName, setFullName] = useState('')
 	const [address, setAddress] = useState('')
+
 
 	const listForAdd = [
 		// Добавление института

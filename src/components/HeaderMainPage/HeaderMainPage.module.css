@@ -29,7 +29,7 @@
 .sideNav {
     position: absolute;
     width: 3rem;
-    left: -100rem;
+    left: -120rem;
     transition: left 1s ease;
     z-index: 1000;
 }

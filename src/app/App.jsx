@@ -4,7 +4,7 @@ import './App.module.css'
 import AdminMainPage from '../pages/AdminMainPage/AdminMainPage'
 import { AuthorizationRoutes } from './Road'
 import UsersPage from '../pages/UsersPage/UsersPage'
-import ReviewsPage from '../pages/ReviewsPage/ReviewsPage'
+import ReviewsPage from '../features/ReviewsPage/ReviewsPage'
 import StatisticInstPage from '../pages/StatisticInstPage/StatisticInstPage'
 
 function App() {

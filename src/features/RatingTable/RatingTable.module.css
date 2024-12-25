@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+     overflow-x: auto;
 }
 
 
@@ -29,5 +30,11 @@
         margin-right: auto;
         padding-right: 16rem;
         flex-wrap: wrap;
+    }
+
+    .RatingTa {
+        display: flex;
+        justify-content: flex-start; 
+        overflow-x: auto;
     }
 }
