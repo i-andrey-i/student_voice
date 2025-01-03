@@ -22,17 +22,20 @@ function AuthForm() {
 			authUser(formInfo).then(data=>{
 				console.log('POST запрос отработал', data.access_token)
 				if (data.access_token) {
-					localStorage.setItem('accessToken', data.accessToken)
+					sessionStorage.setItem('accessToken', data.access_token)
 
 					getMe().then(data => {
 						console.log('Функция GetMe отработала')
 						console.log(data, data.id)
 						if (data.id) {
-							localStorage.setItem('userId', data.id)
-							navigate(`mainAdminPage/${data.id}`)
+							sessionStorage.setItem('userId', data.id)
+							if(data.role == 1){
+								navigate(`/`)
+							}
+							
 						} 
 						else {
-							localStorage.removeItem('accessToken')
+							sessionStorage.removeItem('accessToken')
 						}
 					})
 				}

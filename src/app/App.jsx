@@ -12,15 +12,16 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<Navigate to='/login' replace />} />
-				<Route path='mainAdminPage/:id' element={<AdminMainPage />} />
-				<Route path='mainAdminPage/rating' element={<StatisticInstPage />} />
-				<Route path='mainAdminPage/users' element={<UsersPage/>} />
-				<Route path='mainAdminPage/reviews' element={<ReviewsPage/>} />
+				<Route path='login' element={<AuthorizationPage />} />
 
 				<Route element={<AuthorizationRoutes />}>
-					<Route path='login' element={<AuthorizationPage />} />
+					<Route path='/' element={<AdminMainPage />} />
+					<Route path='mainAdminPage/rating' element={<StatisticInstPage />} />
+					<Route path='mainAdminPage/users' element={<UsersPage />} />
+					<Route path='mainAdminPage/reviews' element={<ReviewsPage />} />
 				</Route>
+
+				<Route path='*' element={<Navigate to='login' replace />} />
 			</Routes>
 		</BrowserRouter>
 	)

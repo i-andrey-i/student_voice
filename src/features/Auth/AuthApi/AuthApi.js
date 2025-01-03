@@ -21,7 +21,7 @@ export const authUser  = async({ username, password }) => {
 };
 
 export const getMe = async() => {
-    const url = `${BASE_URL}/ тут что-то будет`
+    const url = `${BASE_URL}/auth/me`
     try{
         const response = await fetch(url,{
             ...createRequestConfig('GET')
@@ -33,7 +33,7 @@ export const getMe = async() => {
 
 
 const createRequestConfig = (method, isFormData = false) => {
-	const token = localStorage.getItem('accessToken')
+	const token = sessionStorage.getItem('accessToken')
 	const config = {
 		method: method,
 		headers: {},
