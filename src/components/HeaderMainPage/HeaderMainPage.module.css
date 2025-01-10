@@ -1,0 +1,111 @@
+.Class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 10.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.logo{
+    width: 14rem;
+    height: 4.8rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.roundButton{
+  background-color: transparent;
+  border: none;
+  margin-right: auto; 
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-left: 4rem;
+  margin-right: auto;   
+  z-index: 3;
+}
+
+.sideNav {
+    position: absolute;
+    width: 3rem;
+    left: -120rem;
+    transition: left 1s ease;
+    z-index: 1000;
+}
+
+.sideNav.open {
+  left: 0;
+  z-index: 1000;
+}
+
+.sideNav ul {
+    background: white;
+    display: flex;
+    margin-left: 13.9rem;
+    list-style: none;
+    height: 10.8rem;
+    gap: 9.4rem;
+    width: 60vw;
+}
+
+.sideNav li {
+  margin-top: 4.3rem;
+}
+
+.sideNav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+}
+
+
+
+@media(max-width: 750px) {
+  .Class{
+    height: 7.6rem;
+  }
+
+  .logo{
+    position: relative;
+    margin-left: auto;
+    margin-right: 2.8rem;
+  }
+
+  .roundButton{
+    margin-left: 2.1rem;
+  }
+
+  .sideNav {
+    position: absolute;
+    width: 3%;
+    left: -100rem;
+    transition: left 1s ease;
+  }
+
+  .sideNav.open {
+    left: 0;
+  }
+
+  .sideNav ul {
+    margin-top: 25rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    display: grid;
+    list-style: none;
+    gap: 3.2rem;
+    margin-left: 2.5vw;
+    width: 95vw;
+    height: 20rem;
+    border-radius: 0.9rem;
+    background: white;
+    padding-bottom: 2rem;
+  }
+
+  .sideNav li {
+    margin: 0;
+  }
+
+}

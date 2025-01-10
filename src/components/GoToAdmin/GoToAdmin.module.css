@@ -1,0 +1,33 @@
+.ButtonSt{
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35.4rem;
+    height: 6.8rem;
+    background-color: #1E4391;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 1.7rem;
+}
+
+@media(max-width: 750px) {
+    .ButtonSt{
+        margin-top: 2.5rem;
+    }
+
+    .link{
+        width: 26rem;
+        height: 4.8rem;
+        font-size: 1.2rem;
+    }
+}

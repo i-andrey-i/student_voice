@@ -1,0 +1,86 @@
+import { useState, useEffect } from 'react'
+import { authUser, getMe } from './AuthApi/AuthApi'
+import styles from './AuthForm.module.css'
+import MyButton from '../../shared/UI/Button/MyButton'
+import MyInput from '../../shared/UI/Input/MyInput'
+import { useNavigate } from 'react-router-dom'
+
+function AuthForm() {
+	const [username, setUsername] = useState('')
+	const [password, setPassword] = useState('')
+	const [formValid, setFormValid] = useState(false)
+	const navigate = useNavigate()
+
+	useEffect(() => {
+		setFormValid(username && password)
+	}, [username, password])
+
+	const onSubmit = (formInfo) => {
+		try {
+			console.log('Поехали!')
+
+			authUser(formInfo).then(data=>{
+				console.log('POST запрос отработал', data.access_token)
+				if (data.access_token) {
+					sessionStorage.setItem('accessToken', data.access_token)
+
+					getMe().then(data => {
+						console.log('Функция GetMe отработала')
+						console.log(data, data.id)
+						if (data.id) {
+							sessionStorage.setItem('userId', data.id)
+							if(data.role == 1){
+								navigate(`/`)
+							}
+							
+						} 
+						else {
+							sessionStorage.removeItem('accessToken')
+						}
+					})
+				}
+			})
+
+		} 
+		catch (error) {console.error(error)}
+	}
+
+	return (
+		<div className={styles.app}>
+			<form
+				className={styles.form}
+				onSubmit={e => {
+					e.preventDefault()
+					onSubmit({username, password })
+				}}
+			>
+				<b>Авторизация</b>
+				<MyInput
+					value={username}
+					onChange={e => setUsername(e.target.value)}
+					name={'login'}
+					type={'login'}
+					placeholder={'Логин'}
+				/>
+
+				<MyInput
+					value={password}
+					onChange={e => setPassword(e.target.value)}
+					name={'password'}
+					type={'password'}
+					placeholder={'Пароль'}
+				/>
+
+				<MyButton
+					className='buttonAuth'
+					disabled={!formValid}
+					type={'submit'}
+					message={'Войти'}
+					styles={{ color: 'white', background: '#1E4391' }}
+				/>
+			</form>
+		</div>
+	)
+}
+
+export default AuthForm

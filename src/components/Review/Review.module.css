@@ -1,0 +1,35 @@
+.Block{
+    background: white;
+    font-family: 'Mont';
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Title{
+    color: #1E4391;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.TextBlock{
+    display: flex;
+    gap: 1.7rem;
+    margin-top: 0.4rem;
+    align-items: center;
+
+}
+
+.TextMain{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #222222;
+}
+
+.Less{
+    color: lightgray;
+}
+
+@media(max-width: 750px) {
+    
+}

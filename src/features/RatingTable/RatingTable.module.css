@@ -1,0 +1,40 @@
+.AllPage {
+    /* Ваши стили для AllPage */
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.RatingTa {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     overflow-x: auto;
+}
+
+
+
+@media(max-width: 750px) {
+
+    .Header {
+        margin-left: 0;
+        width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 16rem;
+        flex-wrap: wrap;
+    }
+
+    .RatingTa {
+        display: flex;
+        justify-content: flex-start; 
+        overflow-x: auto;
+    }
+}

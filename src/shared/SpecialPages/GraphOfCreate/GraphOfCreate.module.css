@@ -1,0 +1,8 @@
+.Text{
+    color: #222222;
+    border: none;
+    border-bottom: 0.1rem solid #222222;
+    height: 2.7rem;
+    font-family: 'Montserrat';
+    outline: none;
+}

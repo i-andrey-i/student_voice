@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.AuthPage{
+  position: relative;
+  background-image: url('../../shared/images/BackgroundAuth.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  position: absolute;
+  width: 10rem;
+  z-index: 1;
+  left: 50%;
+  margin-top: 2rem;
+  transform: translateX(-50%);
+}
+
+@media(max-width: 750px) {
+  .AuthPage{
+    display: grid;
+    background-image: url('../../shared/images/Mob_Back_Auth.png');
+  }
+  
+  .logo{
+    width: 10.4rem;
+    left: 7rem;
+  } 
+}

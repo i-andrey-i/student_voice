@@ -1,0 +1,95 @@
+.formContainer {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.Sorting {
+    color: #1E4391;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: 0.9rem;
+}
+
+.DropdownMenu {
+    margin-top: 1.5rem; 
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background: white;
+    width: 28.6rem;
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: grid;
+    justify-items: center;
+    gap: 4rem;
+}
+
+
+.DropdownItem {
+    display: block;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.ButT{
+    margin: 0;
+    background-color: #1E4391;
+    color: white;
+    height: 6rem;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+
+}
+
+@media(max-width: 750px) {
+    .formContainer {
+        font-size: 1.2rem;
+    }
+
+    .Sorting {
+        font-size: 1.2rem;
+    }
+
+    .Icon {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .DropdownMenu {
+        width: 18rem;
+        z-index: 1000;
+        gap: 2rem;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+
+    .DropdownItem {
+        display: block;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .ButT{
+        height: 4rem;
+        font-size: 1.2rem;
+
+    }
+}
+

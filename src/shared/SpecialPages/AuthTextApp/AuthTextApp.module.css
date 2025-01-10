@@ -1,0 +1,75 @@
+.info{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.title{
+    font-size: 9.6rem;
+    width: 58.5rem;
+    height: 16.8rem;
+    font-family: 'Mont', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-left: 4rem;
+}
+
+.blockText{
+    grid-area: blockText;
+    margin-top: 10rem;
+    font-size: 2.4rem;
+    width: 49.1rem;
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    font-weight: 600;
+}
+
+.butt{
+    margin-top: 3.3rem;
+    border-radius: 2rem;
+    color: black;
+    background: white;
+    font-size: 2.4rem;
+    width: 23.7rem;
+    height: 8rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-weight: 600;
+} 
+
+@media(max-width: 750px) {
+
+    .info{
+        display: grid;
+        margin-top: 1rem;
+        grid-template-areas: 
+            "blockText"
+            "title";
+        height: auto;
+    }   
+    .title{
+        font-size: 4rem;
+        margin-left: 2rem;
+        max-width: 17.7rem;
+        align-self: end;
+        margin-bottom: -5rem;
+    }
+
+    .blockText{
+        margin-left: 2rem;
+        max-width: 22.7rem;
+        max-height: 11.8rem;
+        font-size: 1.4rem;
+    }
+
+    .butt{
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        width: 12rem;
+        height: 4rem;
+    }
+}

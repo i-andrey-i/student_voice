@@ -1,0 +1,11 @@
+.Comp{
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+@media(max-width: 750px) {
+    
+}

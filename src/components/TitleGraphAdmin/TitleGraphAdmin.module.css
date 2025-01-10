@@ -1,0 +1,35 @@
+
+.common{
+    justify-items: center;
+    border: 0.1rem solid #ABC4D2;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0.3rem 4.45rem;
+}
+
+.TitleGraph{
+    background: #1E4391;
+    color: white;
+}
+
+.TitleGraph p,
+.DataSt p{
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.DataComp{
+    background: white;
+    color: black;
+}
+
+@media(max-width: 750px) {
+    .TitleGraph p,
+    .DataSt p{
+        font-size: 1.2rem;
+    }
+}
